@@ -1,0 +1,36 @@
+*{
+    /* border:1px solid blue; */
+    margin:0px;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    display:flex;
+    justify-content: center;
+    background-color: grey;
+}
+.main{
+    background-color: #d3d3d3;
+    display:flex;
+    flex-direction: column;
+    width:1024px;
+    height:1024px;
+}
+.hBox{
+    display:flex;
+    /* background:rgba(13, 73, 184, 0.562) */
+}
+
+.title{
+    text-align: center;
+}
+
+#resetbtn{
+    width:50px;
+}
+
+.game{
+    display:flex;
+    flex-direction: column;
+    width:1024px;
+    height:1024px;
+}
