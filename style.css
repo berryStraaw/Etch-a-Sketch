@@ -1,36 +1,170 @@
 *{
-    /* border:1px solid blue; */
     margin:0px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Cabin Sketch', cursive;
+    color: #254441;
 }
+html,
 body{
-    display:flex;
-    justify-content: center;
-    background-color: grey;
+    position:relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow:hidden;
 }
+
 .main{
-    background-color: #d3d3d3;
+    background-color: #F2C57C;
     display:flex;
     flex-direction: column;
-    width:1024px;
-    height:1024px;
+    width:100vw;
+    height:100vh;
+    align-items:center;
 }
+
+
 .hBox{
     display:flex;
-    /* background:rgba(13, 73, 184, 0.562) */
+}
+
+.title p{
+}
+
+#resetbtn{
+    
 }
 
 .title{
     text-align: center;
+    height:10vh;
+    padding:20px;
+    font-size: 30px;
 }
 
-#resetbtn{
-    width:50px;
+.contentBox{
+    margin-top:50px;
+    display: flex;
+    justify-content: center;
+    background-color: #FF6F59;
+    border-radius: 20px 20px 20px 20px;
 }
 
+.userInterface{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.color{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    
+}
+.boxSize{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+}
+input{
+    width: 50px;
+    height:25px;
+    font-size: 25px;
+    background-color: #F2C57C;
+    border-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    color:#254441
+}
 .game{
+    padding:10px;
     display:flex;
     flex-direction: column;
-    width:1024px;
-    height:1024px;
+    width:500px;
+    height:500px;
+}
+.btn{
+    font-family: serif;
+    background-color: #F2C57C;
+    border-color: darkred  ;
+    color:#EF3054;
+    border-radius:5px;
+    font-size:25px;
+    
+}
+
+
+
+
+
+
+
+
+/* Personal Projects ................................................. */
+/* set main position to relative */
+
+.personalProjects .topLayer .gitIcon{background-color: #F45B69;}
+.personalProjects .topLayer .gitIcon a i{color:#F5FBEF;}
+.personalProjects .hiddenLayer{background-color: #F45B69;}
+.personalProjects .hiddenLayer .IconText{color:#F5FBEF;}
+.personalProjects .hiddenLayer .IconText a{color:#F5FBEF;}
+.personalProjects .hiddenLayer .IconText a:hover{color:#F45B69; background-color: #F5FBEF;}
+.personalProjects .text{color:rgb(0, 139, 35);}
+.personalProjects .icon{color:rgb(0, 139, 19);}
+
+
+.personalProjects{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom:0;
+    left:0;
+    width: 100vw;
+    height:24px;
+    
+    /* background-color: #F45B69; */
+    transition: all 0.5s ease;
+}
+/* .personalProjects:hover{
+    height:64px;
+} */
+.personalProjects .topLayer{
+    display: flex;
+    justify-content: center;
+}
+
+.personalProjects .topLayer .gitIcon{
+    border-radius: 5px 5px 0px 0px;
+    height: 24px;
+    width: 24px;
+}
+
+
+.personalProjects .topLayer .gitIcon a i{
+    font-size: 24px;  
+}
+
+.personalProjects .hiddenLayer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.personalProjects .hiddenLayer .IconText{
+    font-size: 24px;
+}
+
+.personalProjects .hiddenLayer .IconText a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.personalProjects .hiddenLayer .IconText a:hover{
+    transition: all 0.5s ease;
+    color:#F45B69;
+    background-color: #F5FBEF;;
 }

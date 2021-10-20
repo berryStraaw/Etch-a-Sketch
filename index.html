@@ -1,22 +1,105 @@
 <!DOCTYPE html>
 <html lang='en'>
     <head>
+
         <meta charset='UTF-8'>
         <link rel='stylesheet' href='style.css'>
         <script src='script.js' defer></script>
         <title>Etch-a-Sketch project</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet"> 
+
+        <!-- boxicon -->
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
-        
-        
         <div class='main'>
+
             <div class='title'>
                 <h1>This is my Etch a Sketch project</h1>
-                <p>A display of my DOM manipulation skills</p>
-                <button id='resetbtn'>Reset</button>
-             </div>
-            <div class='game'>
+                <p>A display of my DOM manipulation skills using js</p>
                 
+             </div>
+             <div class="contentBox">
+                <div class="userInterface">
+                    <div class="color"> 
+                        <label for="colorpicker">Color Picker:</label>
+                        <input type="color" id="colorpicker" value="#0000ff">  
+                        <button id="colorApply" class="btn">Apply</button>
+                    </div>
+                    <div class="boxSize">
+                        <label for="boxsize">Choose box size:</label>
+                        <input type="number" id="boxsize" value="16" min="1" max="100">  
+                        <button id="sizeConfirm" class="btn">Apply</button>
+                    </div>
+                    <button id='resetbtn' class="btn">Reset</button>
+                </div>
+                <div class='game'></div>
+             </div>
+
+
+            
+        </div>
+
+        <div class="personalProjects">
+            <div class="topLayer">
+                <div class='gitIcon'>
+                    <a href="https://github.com/berryStraaw">
+                       <i class='bx bxl-github' ></i> 
+                    </a>
+                </div>
+            </div>
+            <div class="hiddenLayer">
+                <div class="IconText">
+                    My other projects:
+                </div>
+                <div class="IconText">
+                    <a href="https://berrystraaw.github.io/Landing_page/">
+                        <div class="icon">
+                            <i class='bx bxl-css3' ></i>
+                        </div>
+                        <div class="text">
+                            Landing Page 
+                        </div>
+                    </a>
+                </div>
+                <!-- <div class="IconText">
+                    <a href="https://berrystraaw.github.io/Rock-Paper-Scissors/">
+                        <div class="icon">
+                            <i class='bx bxl-javascript' ></i>
+                        </div>
+                        <div class="text">
+                            Rock Paper Scissors 
+                        </div>
+                    </a>
+                </div> -->
+                <!-- <div class="IconText">
+                    <a href="https://berrystraaw.github.io/Etch-a-Sketch/">
+                        <div class="icon">
+                            <i class='bx bxl-javascript' ></i>
+                        </div>
+                        <div class="text">
+                            Etch-a-Sketch
+                        </div>
+                    </a>
+                </div> -->
+                <div class="IconText">
+                    <a href="https://berrystraaw.github.io/Calculator/">
+                        <div class="icon">
+                            <i class='bx bxs-calculator' ></i>
+                        </div>
+                        <div class="text">
+                            Calculator
+                        </div>
+                    </a>
+                </div>
+
+
             </div>
         </div>
     </body>
